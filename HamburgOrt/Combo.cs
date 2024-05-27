@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace HamburgOrt
 {
-    internal class Combo
+    public class Combo
     {
-        private int comboId {  get; set; }
-        private String nombre { get; set; }
-        private double precio { get; set; }
-        private Tamaño tamaño { get; set; }
+        [Key]
+        public int comboId {  get; set; }
+        public String nombre { get; set; }
+        public double precio { get; set; }
+        public Tamanio tamanio { get; set; }
 
 
     }

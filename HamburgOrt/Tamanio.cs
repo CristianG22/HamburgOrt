@@ -4,19 +4,16 @@ using System.Linq;
 using System.Reflection.PortableExecutable;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace HamburgOrt
 {
-    public enum TamañoActual
-    { 
+    public enum Tamanio
+    {
         Chico,
         Mediano,
-        Grande
-    }
-    internal class Tamaño
-    {
-        private TamañoActual tamaño { get; set; }
-        private int tamañoId { get; set; }
+        Grande,
+        ExtraGrande
 
     }
 }

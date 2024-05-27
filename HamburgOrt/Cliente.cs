@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace HamburgOrt
 {
-    internal class Cliente
+    public class Cliente
     {
-        private int clienteId { get; set; }
-        private String nombre { get; set; }
-        private String dni { get; set; }
+        [Key]
+        public int clienteId { get; set; }
+        public String nombre { get; set; }
+        public String dni { get; set; }
 
     }
 }
